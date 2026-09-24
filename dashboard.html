@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Lite UGX Earn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <strong>Lite UGX Earn</strong>
+  <button class="button small" onclick="logout()">Log out</button>
+</header>
+<main class="dashboard">
+  <section class="balance card">
+    <span>Available balance</span>
+    <strong id="balance">UGX 0</strong>
+  </section>
+  <section class="card">
+    <h2 id="welcome">Welcome</h2>
+    <p>Referral code: <strong id="referral"></strong></p>
+  </section>
+  <section>
+    <h2>Available tasks</h2>
+    <div id="tasks"></div>
+  </section>
+  <section class="card">
+    <h2>Ledger</h2>
+    <div id="ledger"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+<script>loadDashboard();</script>
+</body>
+</html>
